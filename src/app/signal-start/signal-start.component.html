@@ -1,0 +1,22 @@
+<div class="container">
+  <!-- <h4>Simple Signal</h4>
+  <input type="text" (input)="renderTitle($event)">
+
+  <div class="mt-2">
+    Render Title: {{ title() }}
+  </div> -->
+  <hr>
+  <h4>Signal Count</h4>
+
+  <label class="mr-2">Price</label>
+  <input type="text" [value]="price()">
+
+  <label class="mr-2">Qty</label>
+  <input type="text" [value]="qty()" (input)="qualityUpdate($event)">
+
+  <div>
+    -----------------------<br>
+    Total : {{ totalPrice() }}<br>
+    -----------------------
+  </div>
+</div>
